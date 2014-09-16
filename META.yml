@@ -18,6 +18,7 @@ no_index:
     - t
     - inc
 requires:
+  File::Basename: 0.96
   File::Find: 0.96
   Mojolicious: 5.00
   Mojolicious::Plugin::AssetPack: 0.21
@@ -26,4 +27,4 @@ resources:
   bugtracker: https://github.com/dgikiller/mojolicious-plugin-jquery/issues
   homepage: https://github.com/dgikiller/mojolicious-plugin-jquery
   repository: https://github.com/dgikiller/mojolicious-plugin-jquery.git
-version: 2.11000
+version: 2.11001

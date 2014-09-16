@@ -1,5 +1,6 @@
 package Mojolicious::Plugin::JQuery;
 use File::Find;
+use File::Basename ();
 
 =head1 NAME
 
@@ -7,7 +8,7 @@ Mojolicious::Plugin::JQuery - Mojolicious + http://jquery.com/
 
 =head1 VERSION
 
-2.11000
+2.11001
 
 =head1 DESCRIPTION
 
@@ -94,7 +95,7 @@ use Mojo::Base 'Mojolicious::Plugin';
 use File::Spec::Functions 'catdir';
 use Cwd ();
 
-our $VERSION = '2.11000';
+our $VERSION = '2.11001';
 
 =head1 METHODS
 
@@ -160,14 +161,14 @@ sub register {
 
     push @{ $app->static->paths }, $self->asset_path;
     $app->asset(
-        'jquery.js' => $config->{migrate} && !( $config->{jquery_1} )
+        'jquery.js' => $config->{jquery_1}
+        ? ( $location . ( grep /^jquery-1\.(\d+)\.(\d+)\.js$/, @files )[0] )
+        : ( $location . ( grep /^jquery-2\.(\d+)\.(\d+)\.js$/, @files )[0] ),
+        $config->{migrate} && !( $config->{jquery_1} )
         ? ( $location
-                . ( grep /^jquery-migrate-(\d+)\.(\d+)\.(\d+).js/, @files )[0]
+                . ( grep /^jquery-migrate-(\d+)\.(\d+)\.(\d+)\.js$/, @files )[0]
             )
         : (),
-        $config->{jquery_1}
-        ? ( $location . ( grep /^jquery-1\.(\d+)\.(\d+)\.js$/, @files )[0] )
-        : ( $location . ( grep /^jquery-2\.(\d+)\.(\d+)\.js$/, @files )[0] )
     );
 
 }
