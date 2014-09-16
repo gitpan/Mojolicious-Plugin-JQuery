@@ -1,0 +1,22 @@
+.ship.conf
+Changes
+cpanfile
+demo.pl
+lib/Mojolicious/Plugin/JQuery.pm
+lib/Mojolicious/Plugin/JQuery/js/jquery-1.11.1.js
+lib/Mojolicious/Plugin/JQuery/js/jquery-2.1.1.js
+lib/Mojolicious/Plugin/JQuery/js/jquery-migrate-1.2.1.js
+LICENSE
+Makefile.PL
+MANIFEST			This list of files
+README.md
+t/00-basic.t
+t/bin/sass.asc
+t/files.t
+t/Helper.pm
+t/pack.t
+t/synopsis.t
+t/with-jquery-1.t
+t/with-migrate.t
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)
