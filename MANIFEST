@@ -6,6 +6,10 @@ lib/Mojolicious/Plugin/JQuery.pm
 lib/Mojolicious/Plugin/JQuery/js/jquery-1.11.1.js
 lib/Mojolicious/Plugin/JQuery/js/jquery-2.1.1.js
 lib/Mojolicious/Plugin/JQuery/js/jquery-migrate-1.2.1.js
+lib/Mojolicious/Plugin/JQuery/packed/jquery-3d93b072d14f2bd1ede58f4847f537fd.js
+lib/Mojolicious/Plugin/JQuery/packed/jquery-7403060950f4a13be3b3dfde0490ee05.js
+lib/Mojolicious/Plugin/JQuery/packed/jquery-9941e7b29c9a280124b73f6abeb23ddf.js
+lib/Mojolicious/Plugin/JQuery/packed/jquery-a2dd3b67dca8bc863a7fee80f4405791.js
 LICENSE
 Makefile.PL
 MANIFEST			This list of files

@@ -1,10 +1,10 @@
 {
    "abstract" : "Mojolicious + http://jquery.com/",
    "author" : [
-      "skullbocks <dgikille@gmail.com>"
+      "Francesco Ferro <dgikiller@users.noreply.github.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.94, CPAN::Meta::Converter version 2.133380",
+   "generated_by" : "ExtUtils::MakeMaker version 7.04, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "artistic_2"
    ],
@@ -32,10 +32,10 @@
       },
       "runtime" : {
          "requires" : {
-            "File::Basename" : "0.96",
-            "File::Find" : "0.96",
-            "Mojolicious" : "5.00",
-            "Mojolicious::Plugin::AssetPack" : "0.21",
+            "File::Basename" : "2",
+            "File::Find" : "3",
+            "Mojolicious" : "0",
+            "Mojolicious::Plugin::AssetPack" : "0",
             "perl" : "5.008005"
          }
       }
@@ -50,5 +50,5 @@
          "url" : "https://github.com/dgikiller/mojolicious-plugin-jquery.git"
       }
    },
-   "version" : "2.11001"
+   "version" : "2.11002"
 }
