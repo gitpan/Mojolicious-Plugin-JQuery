@@ -1,7 +1,7 @@
 ---
 abstract: 'Mojolicious + http://jquery.com/'
 author:
-  - 'Francesco Ferro <dgikiller@users.noreply.github.com>'
+  - 'skullbocks <dgikille@gmail.com>'
 build_requires:
   Test::More: '0.96'
 configure_requires:
@@ -19,7 +19,6 @@ no_index:
     - inc
 requires:
   File::Basename: '2'
-  File::Find: '3'
   Mojolicious: '0'
   Mojolicious::Plugin::AssetPack: '0'
   perl: '5.008005'
@@ -27,4 +26,4 @@ resources:
   bugtracker: https://github.com/dgikiller/mojolicious-plugin-jquery/issues
   homepage: https://github.com/dgikiller/mojolicious-plugin-jquery
   repository: https://github.com/dgikiller/mojolicious-plugin-jquery.git
-version: '2.11002'
+version: '2.11003'
